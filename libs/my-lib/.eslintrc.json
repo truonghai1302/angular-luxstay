@@ -8,7 +8,7 @@
         "plugin:@nrwl/nx/angular",
         "plugin:@angular-eslint/template/process-inline-templates"
       ],
-      "parserOptions": { "project": ["apps/angular-luxstay/tsconfig.*?.json"] },
+      "parserOptions": { "project": ["libs/my-lib/tsconfig.*?.json"] },
       "rules": {
         "@angular-eslint/directive-selector": [
           "error",
@@ -25,9 +25,7 @@
             "prefix": "angular-luxstay",
             "style": "kebab-case"
           }
-        ],
-        "@angular-eslint/no-lifecycle-call": ["error"],
-        "@typescript-eslint/no-explicit-any": ["error"]
+        ]
       }
     },
     {

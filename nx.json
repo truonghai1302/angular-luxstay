@@ -1,40 +1,33 @@
 {
   "implicitDependencies": {
     "angular.json": "*",
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": "*"
-    },
+    "package.json": { "dependencies": "*", "devDependencies": "*" },
     "tsconfig.base.json": "*",
     "tslint.json": "*",
     ".eslintrc.json": "*",
     "nx.json": "*"
   },
-  "affected": {
-    "defaultBase": "master"
-  },
+  "affected": { "defaultBase": "master" },
   "npmScope": "angular-luxstay",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "accessToken": "YzUzZmQ1MjItYTE1OC00NWVlLTgzOTctYzRkNGEyNzQwNmNhfHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
       }
     }
   },
   "projects": {
-    "angular-luxstay": {
-      "tags": []
-    },
+    "angular-luxstay": { "tags": [] },
     "angular-luxstay-e2e": {
       "tags": [],
       "implicitDependencies": ["angular-luxstay"]
     },
-    "api": {
-      "tags": []
-    },
-    "api-interfaces": {
-      "tags": []
-    }
+    "api": { "tags": [] },
+    "api-interfaces": { "tags": [] },
+    "my-lib": { "tags": [] }
   }
 }

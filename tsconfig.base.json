@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@angular-luxstay/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@angular-luxstay/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@angular-luxstay/my-lib": ["libs/my-lib/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
