@@ -104,7 +104,10 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,graphql}": "eslint --cache --fix",
+    "*.{js,ts,graphql}": [
+      "eslint --cache --fix",
+      "yarn format --uncommitted"
+    ],
     "*.format:write": "prettier --write"
   }
 }
