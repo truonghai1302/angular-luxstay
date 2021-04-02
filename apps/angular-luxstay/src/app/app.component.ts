@@ -9,5 +9,6 @@ import { Message } from '@angular-luxstay/api-interfaces';
 })
 export class AppComponent {
   hello$ = this.http.get<Message>('/api/hello');
+  a: string;
   constructor(private http: HttpClient) {}
 }
