@@ -214,26 +214,178 @@
         }
       }
     },
-    "my-lib": {
+    "web-shared-data-access": {
       "projectType": "library",
-      "root": "libs/my-lib",
-      "sourceRoot": "libs/my-lib/src",
+      "root": "libs/web/shared/data-access",
+      "sourceRoot": "libs/web/shared/data-access/src",
       "prefix": "angular-luxstay",
       "architect": {
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "libs/my-lib/src/**/*.ts",
-              "libs/my-lib/src/**/*.html"
+              "libs/web/shared/data-access/src/**/*.ts",
+              "libs/web/shared/data-access/src/**/*.html"
             ]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/my-lib"],
+          "outputs": ["coverage/libs/web/shared/data-access"],
           "options": {
-            "jestConfig": "libs/my-lib/jest.config.js",
+            "jestConfig": "libs/web/shared/data-access/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "web-shared-app-config": {
+      "projectType": "library",
+      "root": "libs/web/shared/app-config",
+      "sourceRoot": "libs/web/shared/app-config/src",
+      "prefix": "angular-luxstay",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/shared/app-config/src/**/*.ts",
+              "libs/web/shared/app-config/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/shared/app-config"],
+          "options": {
+            "jestConfig": "libs/web/shared/app-config/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "web-shell-ui-layout": {
+      "projectType": "library",
+      "root": "libs/web/shell/ui/layout",
+      "sourceRoot": "libs/web/shell/ui/layout/src",
+      "prefix": "angular-luxstay",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/shell/ui/layout/src/**/*.ts",
+              "libs/web/shell/ui/layout/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/shell/ui/layout"],
+          "options": {
+            "jestConfig": "libs/web/shell/ui/layout/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "web-shell-ui-main-view": {
+      "projectType": "library",
+      "root": "libs/web/shell/ui/main-view",
+      "sourceRoot": "libs/web/shell/ui/main-view/src",
+      "prefix": "angular-luxstay",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/shell/ui/main-view/src/**/*.ts",
+              "libs/web/shell/ui/main-view/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/shell/ui/main-view"],
+          "options": {
+            "jestConfig": "libs/web/shell/ui/main-view/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "web-shell-feature": {
+      "projectType": "library",
+      "root": "libs/web/shell/feature",
+      "sourceRoot": "libs/web/shell/feature/src",
+      "prefix": "angular-luxstay",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/shell/feature/src/**/*.ts",
+              "libs/web/shell/feature/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/shell/feature"],
+          "options": {
+            "jestConfig": "libs/web/shell/feature/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "web-shared-ui-icon": {
+      "projectType": "library",
+      "root": "libs/web/shared/ui/icon",
+      "sourceRoot": "libs/web/shared/ui/icon/src",
+      "prefix": "angular-luxstay",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/shared/ui/icon/src/**/*.ts",
+              "libs/web/shared/ui/icon/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/shared/ui/icon"],
+          "options": {
+            "jestConfig": "libs/web/shared/ui/icon/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "web-shared-directives-click-stop-propagation": {
+      "projectType": "library",
+      "root": "libs/web/shared/directives/click-stop-propagation",
+      "sourceRoot": "libs/web/shared/directives/click-stop-propagation/src",
+      "prefix": "angular-luxstay",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/shared/directives/click-stop-propagation/src/**/*.ts",
+              "libs/web/shared/directives/click-stop-propagation/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/web/shared/directives/click-stop-propagation"
+          ],
+          "options": {
+            "jestConfig": "libs/web/shared/directives/click-stop-propagation/jest.config.js",
             "passWithNoTests": true
           }
         }

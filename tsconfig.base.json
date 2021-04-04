@@ -16,7 +16,27 @@
     "baseUrl": ".",
     "paths": {
       "@angular-luxstay/api-interfaces": ["libs/api-interfaces/src/index.ts"],
-      "@angular-luxstay/my-lib": ["libs/my-lib/src/index.ts"]
+      "@angular-luxstay/web/shared/data-access": [
+        "libs/web/shared/data-access/src/index.ts"
+      ],
+      "@angular-luxstay/web/shared/app-config": [
+        "libs/web/shared/app-config/src/index.ts"
+      ],
+      "@angular-luxstay/web/shell/ui/layout": [
+        "libs/web/shell/ui/layout/src/index.ts"
+      ],
+      "@angular-luxstay/web/shell/ui/main-view": [
+        "libs/web/shell/ui/main-view/src/index.ts"
+      ],
+      "@angular-luxstay/web/shell/feature": [
+        "libs/web/shell/feature/src/index.ts"
+      ],
+      "@angular-luxstay/web/shared/ui/icon": [
+        "libs/web/shared/ui/icon/src/index.ts"
+      ],
+      "@angular-luxstay/web/shared/directives/click-stop-propagation": [
+        "libs/web/shared/directives/click-stop-propagation/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

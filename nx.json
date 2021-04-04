@@ -28,6 +28,12 @@
     },
     "api": { "tags": [] },
     "api-interfaces": { "tags": [] },
-    "my-lib": { "tags": [] }
+    "web-shared-data-access": { "tags": [] },
+    "web-shared-app-config": { "tags": [] },
+    "web-shell-ui-layout": { "tags": [] },
+    "web-shell-ui-main-view": { "tags": [] },
+    "web-shell-feature": { "tags": [] },
+    "web-shared-ui-icon": { "tags": [] },
+    "web-shared-directives-click-stop-propagation": { "tags": [] }
   }
 }

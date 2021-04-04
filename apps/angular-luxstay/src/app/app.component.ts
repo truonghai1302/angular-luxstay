@@ -4,10 +4,9 @@ import { Message } from '@angular-luxstay/api-interfaces';
 
 @Component({
   selector: 'angular-luxstay-root',
-  templateUrl: './app.component.html',
+  template: `<router-outlet></router-outlet>`,
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  hello$ = this.http.get<Message>('/api/hello');
   constructor(private http: HttpClient) {}
 }
